@@ -1,77 +1,76 @@
 # Graphical MARIE Architecture Simulator
 
 ## 📌 Project Overview
-The **Graphical MARIE Architecture Simulator** is an educational tool built using Python and Tkinter to simulate the MARIE (Machine Architecture that is Really Intuitive and Easy) computer architecture. It helps users understand how a CPU executes instructions, manages memory, and interacts with registers through a visual and interactive interface.
+The **Graphical MARIE Architecture Simulator** is an educational Python project that simulates the MARIE (Machine Architecture that is Really Intuitive and Easy) CPU architecture.  
+
+The simulator provides a graphical interface using Tkinter to help students understand how a CPU executes instructions, manages memory, and interacts with registers in a step-by-step visual way.
 
 ---
 
 ## 🎯 Features
 
 ### 📝 Assembly Code Editor
-- Built-in text editor for writing MARIE assembly programs
-- Supports multiline editing and scrolling
+- Write MARIE assembly code directly inside the program
+- Supports multiline editing
 
 ### ⚙️ Assembler (Two-Pass)
-- Converts assembly code into machine code (hexadecimal)
-- **Pass 1:** Detects labels and builds symbol table
-- **Pass 2:** Translates instructions into machine code
+- Converts assembly instructions into machine code
+- Supports label handling and symbol table creation
 - Supports:
   - LOAD, STORE, ADD, SUBT
   - INPUT, OUTPUT, SKIPCOND
   - JUMP, HALT
-  - DEC, HEX data declarations
+  - DEC, HEX
 
 ### 🧠 CPU Simulation
-- Simulates MARIE instruction cycle:
+- Simulates full instruction cycle:
   - Fetch
   - Decode
   - Execute
   - PC Increment
-- Step-by-step execution support
+- Step-by-step execution for learning
 
 ### 💾 Memory System
-- 4096 memory locations
-- Grid-based memory visualization
-- Highlights modified memory cells during execution
+- Simulates 4096 memory locations
+- Displays memory in a grid view
+- Highlights updated memory cells
 
 ### 📊 Registers
-Simulates core MARIE registers:
-- AC (Accumulator)
-- IR (Instruction Register)
-- MAR (Memory Address Register)
-- MBR (Memory Buffer Register)
-- PC (Program Counter)
-- IN (Input Register)
-- OUT (Output Register)
+Simulates MARIE CPU registers:
+- AC, IR, MAR, MBR
+- PC, IN, OUT
 
 ### 🎮 Control Panel
-- **Assemble & Load:** Compile and load program into memory
-- **Step Instruction:** Execute one instruction at a time
-- **Reset CPU:** Reset system state
+- Assemble & Load program
+- Step-by-step execution
+- Reset CPU simulation
 
 ### 🖥️ Output System
-- Displays output using dialog messages
-- Shows results from OUTPUT instruction
+- Displays output using popup messages
+- Shows results of OUTPUT instruction
 
 ### 🎨 GUI
 - Built using Tkinter
-- User-friendly layout with:
+- Simple educational interface with:
   - Code editor
   - Memory view
-  - Register dashboard
+  - Registers panel
   - Control buttons
 
 ---
 
 ## 🛠️ Technologies Used
 - Python 3.x
-- Tkinter (GUI Library)
+- Tkinter (built-in GUI library)
 
 ---
 
 ## 🚀 How to Run
 
-1. Install Python 3.x
-2. Clone the repository:
+1. Make sure Python 3 is installed  
+2. Download the project file:  
+   `Main Code.py`
+
+3. Run the program:
 ```bash
-git clone https://github.com/your-username/Graphical-MARIE-Architecture-Simulator.git
+python "Main Code.py"
